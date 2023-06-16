@@ -1,23 +1,16 @@
 import './App.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Signup from './pages/Signup'
 function App() {
-
-
   return (
-          <div class="card bg-base-200 w-80">
-            <div class="card-body">
-              <input placeholder="Email" class="input input-bordered" />
-              <label class="label cursor-pointer">
-                Accept terms of use
-                <input type="checkbox" class="toggle" />
-              </label>
-              <label class="label cursor-pointer">
-                Submit to newsletter
-                <input type="checkbox" class="toggle" />
-              </label>
-              <button class="btn btn-neutral">Save</button>
-            </div>
-          </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+        </Routes>
+      </BrowserRouter>
+       
   )
 }
 
