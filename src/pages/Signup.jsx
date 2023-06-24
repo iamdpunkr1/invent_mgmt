@@ -33,12 +33,12 @@ const Signup = () => {
           <label className="label pb-0">
             <span className="label-text">Confirm Password</span>
           </label>
-          <input placeholder="********" type='password' className="mb-3 input input-bordered" />
+          <input placeholder="*********" type='password' className="mb-3 input input-bordered" />
           
           <button className="btn btn-primary mb-3">Sign Up</button>
           
           <Link to="/" className='text-indigo-700 text-center font-semibold text-sm'>Forgot password?</Link>
-          <p className='text-center font-semibold text-sm'>Already have a account?<Link className='text-indigo-700' to="/">Login</Link></p>
+          <p className='text-center font-semibold text-sm'>Already have a account?<Link className='text-indigo-700' to="/"> Login</Link></p>
           
         </div>
       </div>

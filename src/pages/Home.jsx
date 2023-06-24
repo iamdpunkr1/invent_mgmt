@@ -1,7 +1,14 @@
 
 import invt from '../assets/invt.jpg'
-import { Link } from 'react-router-dom'
+
+import { Link, useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate = useNavigate();
+  const handleSubmit =()=>{
+
+    navigate('/dashboard')
+  }
+
     return (
         <div className='hero min-h-screen flex w-full'>
           
@@ -23,7 +30,7 @@ const Home = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input placeholder="******" type='password' className="mb-3 input input-bordered" />
-                <button className="btn btn-primary mb-3">Login</button>
+                <button className="btn btn-primary mb-3" onClick={handleSubmit}>Login</button>
                 
                 <Link to="/" className='text-indigo-700 text-center font-semibold text-sm'>Forgot password?</Link>
                 <p className='text-center font-semibold text-sm'>Don't have a account? <Link className='text-indigo-700' to="/signup">Sign Up</Link></p>
