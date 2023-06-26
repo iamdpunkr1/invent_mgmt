@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {LuView, LuEdit, LuTrash2} from 'react-icons/lu'
 const Table = () => {
   return (
     <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table table-zebra">
     {/* head */}
     <thead>
       <tr>
@@ -24,8 +24,8 @@ const Table = () => {
         <td>Quality Control Specialist</td>
         <td>Blue</td>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Quality </td>
+        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
       {/* row 2 */}
       <tr className="hover">
@@ -34,8 +34,8 @@ const Table = () => {
         <td>Desktop Support Technician</td>
         <td>Purple</td>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Quality</td>
+        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
       {/* row 3 */}
       <tr>
@@ -44,8 +44,8 @@ const Table = () => {
         <td>Tax Accountant</td>
         <td>Red</td>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Quality </td>
+        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
             {/* row 3 */}
             <tr>
@@ -54,8 +54,8 @@ const Table = () => {
         <td>Tax Accountant</td>
         <td>Red</td>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Quality</td>
+        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
             {/* row 3 */}
             <tr>
@@ -64,8 +64,8 @@ const Table = () => {
         <td>Tax Accountant</td>
         <td>Red</td>
         <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Quality</td>
+        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
     </tbody>
   </table>
