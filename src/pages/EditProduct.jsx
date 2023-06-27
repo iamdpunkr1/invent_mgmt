@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Sidemenu from '../components/Sidemenu'
+import Uploader from '../components/Uploader'
+import dslr from '../assets/dslr.jpg'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+
 
 const EditProduct = () => {
+
+  const [fileName,setFileName] = useState('')
+  const [image,setImage] = useState('')
+  const [value, setValue] = useState('');
+
   return (
     <div className='flex w-full'>
-    <div className='w-64 mr-2'>
+    <div className='w-64 mr-2 '>
     <Sidemenu/>
     </div>
 
@@ -15,52 +26,68 @@ const EditProduct = () => {
         <hr/>
         <h1 className='text-xl font-bold mt-2'>Edit Product</h1>
 
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src={dslr} alt="Shoes" /></figure>
+        <div className="card card-compact w-full bg-base-100 shadow-xl">
             
-            <div className='flex m-2'>
+            <div className='flex'>
+                <div className='w-1/2'>
+                <Uploader image={image} setImage={setImage}
+                          fileName={fileName} setFileName={setFileName} />
+                </div>
+
+             <figure className='w-1/2 flex flex-col'>
+                <img src={dslr} alt="Shoes" />
+                <h3 className='font-bold mt-3'>Previous Image</h3>
+             </figure>
+            </div>
+            
+            {/* <div className='flex m-2'>
                 <p className='font-bold pl-2'>Product availability: </p>
                 <p className='text-green-400 ml-2 font-bold'> In Stock</p> 
-            </div>
+            </div> */}
             <hr />
             <div className="card-body">
                 
-                <h2 className="card-title"><span className='underline'>Name:</span><span>Canon Pixar DSLR D40 Camera </span></h2>
+                <div>
+                <label className="label  pb-0 font-medium">
+                    <span className="label-text ">Product Name :</span>
+                </label>
+                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
+
+                <label className="label  pb-0 font-medium">
+                    <span className="label-text">Product Category :</span>
+                </label>
+                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
-                <div>
-                    <span className='font-bold'>Category: </span><span>ELectronics</span>
-                </div>
                 
-                <div>
-                    <span className='font-bold'>Price: </span><span>45,000</span>
-                </div>
-
-                <div>
-                    <span className='font-bold'>Quantity in stock: </span><span>4</span>
-                </div>
+                <label className="label  pb-0 font-medium">
+                    <span className="label-text">Product Price :</span>
+                </label>
+                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
-                <div>
-                    <span className='font-bold'>Total Value in stock: </span><span>1,80,000</span>
-                </div>
+
+                <label className="label  pb-0 font-medium">
+                    <span className="label-text">Product Quantity :</span>
+                </label>
+                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
-                <hr />
 
-                <div>
-                    <span className='font-bold'>Description: </span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita quasi blanditiis voluptas quod assumenda voluptate reprehenderit unde dolorum deleniti illo harum, architecto deserunt consectetur molestias atque amet commodi? Possimus?</span>
+                <label className="label  pb-0 font-medium">
+                    <span className="label-text">Product Description :</span>
+                </label>
                 </div>
 
-                <hr />
+                <ReactQuill theme="snow" value={value} onChange={setValue}
+                 modules={EditProduct.modules}
+                 formats={EditProduct.formats}
+                
+                 />
 
-                <p>
-                    <span className='text-xs'>Created at: </span><span className='text-xs'>2023-06-27_10:32:00:00</span>
-                </p>
 
-                <p>
-                    <span className='text-xs'>Updated at: </span><span className='text-xs'>2023-06-27_10:32:00:00</span>
-                </p>
-                {/* <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-                </div> */}
+
+             
+                <div className="card-actions justify-center">
+                <button className="btn btn-secondary">Save Changes</button>
+                </div>
             </div>
         </div>
     </div>
@@ -69,4 +96,41 @@ const EditProduct = () => {
   )
 }
 
+
+EditProduct.modules = {
+    toolbar: [
+      [{ header: "1" }, { header: "2" }, { font: [] }],
+      [{ size: [] }],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      [{ align: [] }],
+      [{ color: [] }, { background: [] }],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      ["clean"],
+    ],
+  };
+  EditProduct.formats = [
+    "header",
+    "font",
+    "size",
+    "bold",
+    "italic",
+    "underline",
+    "strike",
+    "blockquote",
+    "color",
+    "background",
+    "list",
+    "bullet",
+    "indent",
+    "link",
+    "video",
+    "image",
+    "code-block",
+    "align",
+  ];
 export default EditProduct

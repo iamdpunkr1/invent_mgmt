@@ -4,13 +4,13 @@ import { MdOutlineAddPhotoAlternate, MdAccountBox, MdLiveHelp, MdOutlineInventor
 
 const Sidemenu = () => {
   return (
-<div className="drawer drawer-open">
+<div className="drawer drawer-open ">
 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content">
     {/* Page content here */}
 
   </div> 
-  <div className="drawer-side">
+  <div className="drawer-side ">
     <label htmlFor="my-drawer" className=""></label>
     <div className='bg-primary h-20 flex justify-between p-4 items-center'>
     {/* <label htmlFor="my-drawer" className="btn btn-primary drawer-button">Open drawer</label> */}

@@ -27,8 +27,13 @@ const Table = () => {
         <td>Cy Ganderton</td>
         <td>Quality </td>
         <td className='flex gap-2'>
-          <Link to="/product_details"> <LuView size={20} color='#7a34eb' /> </Link>
-           <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
+          <Link to="/product_details">
+             <LuView size={20} color='#7a34eb' />
+           </Link>
+          <Link to="/edit_product">
+            <LuEdit size={20} color='#3493eb' />
+          </Link>
+            <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
       {/* row 2 */}
       <tr className="hover">

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import Product from './pages/Product'
+import EditProduct from './pages/EditProduct'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/product_details" element={<Product/>}/>
+          <Route path="/edit_product" element={<EditProduct/>}/>
         </Routes>
       </BrowserRouter>
        
