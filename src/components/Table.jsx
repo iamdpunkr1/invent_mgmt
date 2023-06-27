@@ -1,5 +1,6 @@
 import React from 'react'
 import {LuView, LuEdit, LuTrash2} from 'react-icons/lu'
+import { Link } from 'react-router-dom'
 const Table = () => {
   return (
     <div className="overflow-x-auto">
@@ -25,7 +26,9 @@ const Table = () => {
         <td>Blue</td>
         <td>Cy Ganderton</td>
         <td>Quality </td>
-        <td className='flex gap-2'><LuView size={20} color='#7a34eb' /> <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
+        <td className='flex gap-2'>
+          <Link to="/product_details"> <LuView size={20} color='#7a34eb' /> </Link>
+           <LuEdit size={20} color='#3493eb' /> <LuTrash2  size={20} color='#eb4034' /> </td>
       </tr>
       {/* row 2 */}
       <tr className="hover">

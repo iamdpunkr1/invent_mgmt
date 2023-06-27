@@ -14,7 +14,12 @@ const Sidemenu = () => {
     <label htmlFor="my-drawer" className=""></label>
     <div className='bg-primary h-20 flex justify-between p-4 items-center'>
     {/* <label htmlFor="my-drawer" className="btn btn-primary drawer-button">Open drawer</label> */}
-      <MdOutlineInventory2 size={30} color="white"/>
+      {/* <MdOutlineInventory2 size={30} color="white"/> */}
+      <div className="avatar placeholder">
+          <div className="bg-neutral-focus text-neutral-content rounded-full w-12">
+            <span>INV</span>
+          </div>
+        </div> 
       <MdMenuOpen  size={30} color="white"/>
     </div>
     <ul className="menu p-4 w-64 h-full bg-base-200 text-base-content">
