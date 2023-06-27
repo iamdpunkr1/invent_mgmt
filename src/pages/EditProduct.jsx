@@ -20,7 +20,7 @@ const EditProduct = () => {
 
     <div className='  w-full h-full'>
         <div className='flex justify-between p-2'>
-            <h1 className='text-xl font-bold mt-3'>Welcome, Zino</h1>
+            <h1 className='text-xl font-bold mt-3'>Welcome, Adrija</h1>
             <button className="btn btn-warning ">Logout</button>
         </div>
         <hr/>
@@ -51,24 +51,24 @@ const EditProduct = () => {
                 <label className="label  pb-0 font-medium">
                     <span className="label-text ">Product Name :</span>
                 </label>
-                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
+                <input placeholder="Enter Product Name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
 
                 <label className="label  pb-0 font-medium">
                     <span className="label-text">Product Category :</span>
                 </label>
-                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
+                <input placeholder="Enter Product Category" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
                 
                 <label className="label  pb-0 font-medium">
                     <span className="label-text">Product Price :</span>
                 </label>
-                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
+                <input placeholder="Enter Product Price" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
 
                 <label className="label  pb-0 font-medium">
                     <span className="label-text">Product Quantity :</span>
                 </label>
-                <input placeholder="Enter your name" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
+                <input placeholder="Enter Product Quantity" type='email' className="max-w-xs input input-primary input-bordered mb-3" /> 
                 
 
                 <label className="label  pb-0 font-medium">
@@ -83,8 +83,6 @@ const EditProduct = () => {
                  />
 
 
-
-             
                 <div className="card-actions justify-center">
                 <button className="btn btn-secondary">Save Changes</button>
                 </div>

@@ -17,7 +17,7 @@ const Dashboard = () => {
 
 <div className='  w-full h-full'>
     <div className='flex justify-between p-2'>
-        <h1 className='text-xl font-bold mt-3'>Welcome, Zino</h1>
+        <h1 className='text-xl font-bold mt-3'>Welcome, Adrija</h1>
         <button className="btn btn-warning ">Logout</button>
     </div>
     <hr/>

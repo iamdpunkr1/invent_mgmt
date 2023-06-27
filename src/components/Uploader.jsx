@@ -29,7 +29,8 @@ const Uploader = ({fileName,setFileName,image,setImage}) => {
             :
             <>
             <MdCloudUpload color='#1475cf' size={60} />
-            <p>Select new file to upload</p>
+            <p>Select new image to upload</p>
+            <p className='text-xs text-slate-500'>Supported Formats: jpg, jpeg, png</p>
             </>
             
         }
