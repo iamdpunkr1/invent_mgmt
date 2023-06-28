@@ -32,7 +32,7 @@ const Home = () => {
                 <input placeholder="******" type='password' className="mb-3 input input-bordered" />
                 <button className="btn btn-primary mb-3" onClick={handleSubmit}>Login</button>
                 
-                <Link to="/" className='text-indigo-700 text-center font-semibold text-sm'>Forgot password?</Link>
+                <Link to="/forgot" className='text-indigo-700 text-center font-semibold text-sm'>Forgot password?</Link>
                 <p className='text-center font-semibold text-sm'>Don't have a account? <Link className='text-indigo-700' to="/signup">Sign Up</Link></p>
                 
               </div>

@@ -9,6 +9,8 @@ import AddProduct from './pages/AddProduct'
 import Profile from './pages/Profile'
 import EditProfile from './pages/EditProfile'
 import Contact from './pages/Contact'
+import Forgot from './pages/Forgot'
+import Reset from './pages/Reset'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/edit_profile" element={<EditProfile/>}/>
           <Route path="/contactus" element={<Contact/>}/>
+          <Route path="/forgot" element={<Forgot/>}/>
+          <Route path="/resetpassword" element={<Reset/>}/>
         </Routes>
       </BrowserRouter>
        
