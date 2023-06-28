@@ -3,12 +3,8 @@ import { BsFillGrid3X3GapFill } from 'react-icons/bs';
 import { MdOutlineAddPhotoAlternate, MdAccountBox, MdLiveHelp, MdOutlineInventory2, MdMenuOpen } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-const Sidemenu = () => {
-  const [activeItem, setActiveItem] = useState('');
+const Sidemenu = ({activeItem}) => {
 
-  const handleItemClick = (item) => {
-    setActiveItem(item);
-  };
 
   return (
     <div className="drawer drawer-open ">
@@ -24,12 +20,12 @@ const Sidemenu = () => {
         <ul className="menu p-4 w-64 h-full bg-base-200 text-base-content">
           {/* Sidebar content here */}
           <li>
-          <Link to="/dashboard" className={activeItem === 'dashboard' ? 'active' : ''} onClick={() => handleItemClick('dashboard')}>
+          <Link to="/dashboard" className={activeItem === 'dashboard' ? 'active' : ''} >
               <BsFillGrid3X3GapFill size={15} color="black" /> Dashboard
             </Link>
           </li>
           <li>
-            <Link to="/add_product" className={activeItem === 'add_product' ? 'active' : ''} onClick={() => handleItemClick('add_product')}>
+            <Link to="/add_product" className={activeItem === 'add_product' ? 'active' : ''} >
               <MdOutlineAddPhotoAlternate size={20} color="black" /> Add Product
             </Link>
           </li>
@@ -40,16 +36,20 @@ const Sidemenu = () => {
               </summary>
               <ul>
                 <li>
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/profile"  className={activeItem === 'profile' ? 'active' : ''} >
+                    Profile
+                  </Link>
                 </li>
                 <li>
-                <Link to="/edit_profile">Edit Profile</Link>
+                <Link to="/edit_profile"  className={activeItem === 'edit_profile' ? 'active' : ''} >
+                  Edit Profile
+                </Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <Link to="/contactus" className={activeItem === 'contact' ? 'active' : ''} onClick={() => handleItemClick('contact')}>
+            <Link to="/contactus" className={activeItem === 'contact' ? 'active' : ''} >
               <MdLiveHelp size={20} color="black" /> Contact Us
             </Link>
           </li>

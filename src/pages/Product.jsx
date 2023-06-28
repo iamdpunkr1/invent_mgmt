@@ -5,11 +5,11 @@ import dslr from '../assets/dslr.jpg'
 const Product = () => {
   return (
             <div className='flex w-full'>
-            <div className='w-64 mr-2'>
-            <Sidemenu/>
+            <div className='w-1/5  mr-2'>
+            <Sidemenu  activeItem={'dashboard'}/>
             </div>
 
-            <div className='  w-full h-full'>
+            <div className='w-4/5  h-full'>
                 <div className='flex justify-between p-2'>
                     <h1 className='text-xl font-bold mt-3'>Welcome, Zino</h1>
                     <button className="btn btn-warning ">Logout</button>

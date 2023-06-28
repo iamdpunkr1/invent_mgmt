@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 const Profile = () => {
   return (
             <div className='flex w-full'>
-            <div className='w-64 mr-2 '>
-            <Sidemenu/>
+            <div className='w-1/5  mr-2 '>
+            <Sidemenu  activeItem={'profile'}/>
             </div>
 
-            <div className='  w-full h-full'>
+            <div className='w-4/5 h-full'>
                 <div className='flex justify-between p-2'>
                     <h1 className='text-xl font-bold mt-3'>Welcome, Adrija</h1>
                     <button className="btn btn-warning ">Logout</button>
@@ -36,7 +36,7 @@ const Profile = () => {
                 </div>
                 <hr />
                 <div className="card-actions justify-start mt-3">
-                <Link to="edit_profile">
+                <Link to="/edit_profile">
                     <button className="btn btn-primary">Edit Profile</button>
                 </Link>
                 </div>

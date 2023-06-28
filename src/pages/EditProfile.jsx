@@ -5,11 +5,11 @@ import user from '../assets/user.jpg'
 const EditProfile = () => {
   return (
     <div className='flex w-full'>
-    <div className='w-64 mr-2 '>
-    <Sidemenu/>
+    <div className='w-1/5 mr-2 '>
+    <Sidemenu  activeItem={'edit_profile'}/>
     </div>
 
-    <div className='  w-full h-full'>
+    <div className='w-4/5 h-full'>
         <div className='flex justify-between p-2'>
             <h1 className='text-xl font-bold mt-3'>Welcome, Adrija</h1>
             <button className="btn btn-warning ">Logout</button>
