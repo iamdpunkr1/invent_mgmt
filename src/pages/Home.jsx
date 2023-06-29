@@ -18,7 +18,7 @@ const Home = () => {
 
           <div className="w-1/3">
             <div className='w-96 card bg-accent p-5 '>
-              <h2 className='text-center font-bold text-xl pt-3'>Login</h2>
+              <h2 className='text-center font-bold text-2xl pt-3'>Login</h2>
               
               <div className="card-body">
                 <label className="label  pb-0">
